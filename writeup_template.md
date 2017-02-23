@@ -15,10 +15,9 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function and added the property of 
+###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of following steps. 
-
 
 #### Step-I:
 
@@ -118,18 +117,13 @@ weighted_image = weighted_img(line_image, initial_img,
 ###2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when it is  night and dark, rain, snow etc which makes lane sign unclear. 
 
-Another shortcoming could be ...
-
-
-
-
-
+Another shortcoming could be considering rode lane as perfect straight lines. If speed of car is very high and rode is highly curved or if roadlanes appear curved line due to high temperature.
 
 
 ###3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to train the car in every such situations like rainy day, snow , night etc.
 
-Another potential improvement could be to ...
+Another potential improvement could be to use other radiation camera for example infra red camera at night. What about using sound waves like bats use it to detect the position of wall or obstacle.
