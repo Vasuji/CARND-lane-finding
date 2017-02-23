@@ -30,7 +30,7 @@ grey_image = grayscale(image)
 ```
 
 
-<img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/1grey_image.jpg?raw=true" width="320" height="150" />
+<img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/1grey_image.jpg?raw=true" width="350" height="200" />
 ![1](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/1grey_image.jpg?raw=true)
 
 #### Step-II:
