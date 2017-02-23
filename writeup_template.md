@@ -21,15 +21,36 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function and added the property of 
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. 
+
+
+#### Step-I:
+First, I converted the images to grayscale, using  ```grayscale``` helper function
+```
+grey_image = grayscale(image)
+```
+
+#### Step-II:
+Insecond Step I added the property of gaussian blur to the image. Eventhough it was optional step because ```Canny``` function is going to use ```5 x 5``` kernel size for adding gaussian noise, I added this to shee effect.
+```
+ gaussian_blur_image = gaussian_blur(grey_image, kernel_size=3)
+```
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+#### Step-III:
+#### Step-IV:
+#### Step-V:
+#### Step-VI:
+
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
+
+
+
 
 
 ###2. Identify potential shortcomings with your current pipeline
