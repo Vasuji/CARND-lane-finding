@@ -27,19 +27,57 @@ My pipeline consisted of 5 steps.
 
 
 #### Step-I:
+
 First, I converted the images to grayscale, using  ```grayscale``` helper function
+
 ```grey_image = grayscale(image)
 ```
+
 #### Step-II:
+
 Insecond Step I added the property of gaussian blur to the image. Eventhough it was optional step because ```Canny``` function is going to use ```5 x 5``` kernel size for adding gaussian noise, I added this to shee effect.
+
 ```gaussian_blur_image = gaussian_blur(grey_image, kernel_size=3)
 ```
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+
 #### Step-III:
+In third step, I applied canny helper function to find sharp edges. Sharp edges are because of change in pixcel values which we call gradient.
+```
+ canny_image = canny(gaussian_blur_image,\
+                    low_threshold=50,\
+                    high_threshold=150)
+ ```
+
 #### Step-IV:
+In fourth step, I selected the region of interest,
+```
+ masked_image = region_of_interest(canny_image,\
+                                  vertices=vertices0 )
+```
+
 #### Step-V:
+
+In step V, I used ```houg_line``` helper function
+```
+ line_image = hough_lines(masked_image, rho =2, \
+                          theta=np.pi/180,\
+                          threshold=20, \
+                          min_line_len=25,\
+                          max_line_gap =10)
+```
+
 #### Step-VI:
+
+In step IV, I used
+```
+
+weighted_image = weighted_img(line_image, initial_img,
+                           α=0.8,\
+                           β=1.,\
+                           λ=0.)
+```
 
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
