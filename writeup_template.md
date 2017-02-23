@@ -30,8 +30,11 @@ My pipeline consisted of 5 steps.
 
 First, I converted the images to grayscale, using  ```grayscale``` helper function
 
-```grey_image = grayscale(image)
 ```
+grey_image = grayscale(image)
+
+```
+
 
 #### Step-II:
 
