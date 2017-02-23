@@ -34,7 +34,7 @@ First, I converted the images to grayscale, using  ```grayscale``` helper functi
 grey_image = grayscale(image)
 
 ```
-
+![1](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/1grey_image.jpg?raw=true)
 
 #### Step-II:
 
@@ -44,6 +44,7 @@ Insecond Step I added the property of gaussian blur to the image. Eventhough it 
 gaussian_blur_image = gaussian_blur(grey_image, kernel_size=3)
 
 ```
+![2](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/2gaussian_blur_image.jpg?raw=true)
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
@@ -54,6 +55,7 @@ In third step, I applied canny helper function to find sharp edges. Sharp edges 
                     low_threshold=50,\
                     high_threshold=150)
  ```
+![3](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/3canny_image.jpg?raw=true)
 
 #### Step-IV:
 In fourth step, I selected the region of interest,
@@ -61,7 +63,7 @@ In fourth step, I selected the region of interest,
  masked_image = region_of_interest(canny_image,\
                                   vertices=vertices0 )
 ```
-
+![4](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/4masked_image.jpg?raw=true)
 #### Step-V:
 
 In step V, I used ```houg_line``` helper function
@@ -72,6 +74,7 @@ In step V, I used ```houg_line``` helper function
                           min_line_len=25,\
                           max_line_gap =10)
 ```
+![5](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/5line_image.jpg?raw=true)
 
 #### Step-VI:
 
@@ -83,7 +86,7 @@ weighted_image = weighted_img(line_image, initial_img,
                            β=1.,\
                            λ=0.)
 ```
-
+![6](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/6weighted_image.jpg?raw=true)
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
