@@ -126,4 +126,4 @@ Another shortcoming could be considering rode lane as perfect straight lines. If
 
 A possible improvement would be to train the car in every such situations like rainy day, snow , night etc.
 
-Another potential improvement could be to use other radiation camera for example infra red camera at night. What about using sound waves like bats use it to detect the position of wall or obstacle.
+Another potential improvement could be to use other radiation camera for example infrared camera at night. What about using sound waves like bats use it to detect the position of wall or obstacle?
