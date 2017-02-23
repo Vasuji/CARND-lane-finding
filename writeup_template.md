@@ -31,7 +31,7 @@ grey_image = grayscale(image)
 
 
 <img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/1grey_image.jpg?raw=true" width="350" height="200" />
-![1](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/1grey_image.jpg?raw=true)
+
 
 #### Step-II:
 
@@ -41,7 +41,8 @@ In second Step, I added the property of gaussian blur to the image. Eventhough i
 gaussian_blur_image = gaussian_blur(grey_image, kernel_size=3)
 
 ```
-![2](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/2gaussian_blur_image.jpg?raw=true)
+<img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/2gaussian_blur_image.jpg?raw=true" width="350" height="200" />
+
 
 
 #### Step-III:
@@ -52,7 +53,8 @@ In third step, I applied canny helper function to find sharp edges. Sharp edges 
                     low_threshold=50,\
                     high_threshold=150)
  ```
-![3](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/3canny_image.jpg?raw=true)
+ <img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/3canny_image.jpg?raw=true" width="350" height="200" />
+
 
 #### Step-IV:
 
@@ -70,8 +72,9 @@ Using these verticies we can get masked image by using ```region_of_interest``` 
                                   vertices=vertices0 )
 ```
 
-![4](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/4masked_image.jpg?raw=true)
 
+ <img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/4masked_image.jpg?raw=true" width="350" height="200" />
+ 
 #### Step-V:
 
 In step V, I used ```houg_line``` helper function. The most important code in this section is ```draw_lines``` function
@@ -93,10 +96,10 @@ Here are few sub-steps for ```draw_line``` helper function
   * Use linear regression function ```interpolation``` to ge 'm' and 'b' value for a line'y=mx+b' for each line(right and left)
   * Use the value of 'm' and 'b' to draw lines finding end point (use```end_pint_finder```) of line in the image.
   
-  
-![5](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/5line_image.jpg?raw=true)
 
 
+ <img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/5line_image.jpg?raw=true" width="350" height="200" />
+ 
 #### Step-VI:
 
 In step IV, I used ```weighted_image``` which blends line image over intial image with given parameters ```α , β and λ```
@@ -108,8 +111,8 @@ weighted_image = weighted_img(line_image, initial_img,
                            β=1.,\
                            λ=0.)
 ```
+<img src="https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/6weighted_image.jpg?raw=true" width="350" height="200" />
 
-![6](https://github.com/Vasuji/carnd-project1/blob/master/pipeline_images/6weighted_image.jpg?raw=true)
 
 
 ###2. Identify potential shortcomings with your current pipeline
