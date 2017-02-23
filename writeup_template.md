@@ -13,12 +13,6 @@ The goals / steps of this project are the following:
 * Reflect on your work in a written report
 
 
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
-
 ### Reflection
 
 ###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function and added the property of 
@@ -90,7 +84,6 @@ weighted_image = weighted_img(line_image, initial_img,
 
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
-![alt text][image1]
 
 
 
@@ -102,6 +95,11 @@ If you'd like to include images to show how the pipeline works, here is how to i
 One potential shortcoming would be what would happen when ... 
 
 Another shortcoming could be ...
+
+
+
+
+
 
 
 ###3. Suggest possible improvements to your pipeline
