@@ -28,14 +28,11 @@ My pipeline consisted of 5 steps.
 
 #### Step-I:
 First, I converted the images to grayscale, using  ```grayscale``` helper function
+```grey_image = grayscale(image)
 ```
-grey_image = grayscale(image)
-```
-
 #### Step-II:
 Insecond Step I added the property of gaussian blur to the image. Eventhough it was optional step because ```Canny``` function is going to use ```5 x 5``` kernel size for adding gaussian noise, I added this to shee effect.
-```
- gaussian_blur_image = gaussian_blur(grey_image, kernel_size=3)
+```gaussian_blur_image = gaussian_blur(grey_image, kernel_size=3)
 ```
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
